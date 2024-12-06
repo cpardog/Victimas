@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/lib/groovy-all-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jasperreports-fonts-5.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jasperreports-5.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/mysql-connector-j-8.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jasperreports-functions-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/barbecue-1.5-beta1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

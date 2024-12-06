@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="Reportes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-javaflow-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-metadata-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-fonts-5.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-functions-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-chart-customizers-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/commons-beanutils-1.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/barbecue-1.5-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/png-encoder-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/groovy-all-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-custom-visualization-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/commons-javaflow-20060411.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-xalan-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/mysql-connector-java-5.1.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-annotation-processors-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-castor-6.21.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-5.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Reportes/jasperreports-chart-themes-6.21.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

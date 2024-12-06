@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Beneficiarios" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bc040840-570b-473b-9b50-f0d37773b33c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="413"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="576"/>
+	<queryString language="SQL">
+		<![CDATA[ select id_resolucion, cedula_principal, 
+ monto_resolucion,id_beneficiario,
+ nombre_beneficiario,apellido_beneficiario
+from resoluciones,beneficiarios 
+where id_resolucion= resolucion_id 
+order by id_resolucion]]>
+	</queryString>
+	<field name="id_resolucion" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_resolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="cedula_principal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cedula_principal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="monto_resolucion" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="monto_resolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="id_beneficiario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="id_beneficiario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="beneficiarios"/>
+	</field>
+	<field name="nombre_beneficiario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombre_beneficiario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="beneficiarios"/>
+	</field>
+	<field name="apellido_beneficiario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="apellido_beneficiario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="beneficiarios"/>
+	</field>
+	<group name="id_resolucion">
+		<groupExpression><![CDATA[$F{id_resolucion}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="290" y="38" width="250" height="30" backcolor="#FFFFFF" uuid="100b79a8-de97-47c6-931e-59f872843d64"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Beneficiarios Resolución]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="e141fbcd-6e9a-4e20-a437-30c9ab1aa0f9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="277ade9d-0f58-49a8-9f66-7419b8402299"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_resolucion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="10" width="100" height="30" uuid="22c2e2ce-3e48-4a38-aaab-39c90d1160a6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1af6ff96-ac40-4f6f-b59a-4b65830e8d09"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[monto_resolucion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="10" width="100" height="30" uuid="33dae190-6428-4ad7-81b1-0d26217c3d37">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4536e4fe-99d7-46bd-9efb-33929f5a0ca7"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[cedula_principal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="10" width="100" height="30" uuid="1c7702ec-f082-411e-9b2c-67e38b1e7895">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de2f6c0a-5b8a-4c7f-83c8-7a6dd379bd83"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_beneficiario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="10" width="100" height="30" uuid="6060eb79-0c09-4d21-b55b-3e1204feac86">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aac2f240-8163-4a14-a8b7-568669edc360"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[nombre_beneficiario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="10" width="100" height="30" uuid="8b7b1f19-5aa4-47d8-afa1-6265fb5f73b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3078aa62-0ea3-4c86-8493-d907ea17e0db"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[apellido_beneficiario]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="100" height="20" uuid="e58e4f7f-1bc7-451c-a2e0-78a7ee2522ab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="277ade9d-0f58-49a8-9f66-7419b8402299"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id_resolucion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="10" width="100" height="20" uuid="4d180e46-19cf-4cc3-ba75-8a6cb94e5d91">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1af6ff96-ac40-4f6f-b59a-4b65830e8d09"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{monto_resolucion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="10" width="100" height="20" uuid="79a9c9be-b82b-47dd-a032-e1d662423be1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4536e4fe-99d7-46bd-9efb-33929f5a0ca7"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{cedula_principal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="5" width="100" height="25" uuid="ec2a0be5-2456-4f57-a444-c34ddf156c65">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de2f6c0a-5b8a-4c7f-83c8-7a6dd379bd83"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_beneficiario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="5" width="110" height="25" uuid="3a0102a9-f13d-42a4-b5ec-d36dc6fb148d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aac2f240-8163-4a14-a8b7-568669edc360"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nombre_beneficiario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="0" width="110" height="30" uuid="7318600b-b579-434a-aaa1-6a4c4bea5b0a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3078aa62-0ea3-4c86-8493-d907ea17e0db"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{apellido_beneficiario}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

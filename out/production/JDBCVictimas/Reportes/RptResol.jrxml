@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6742015c-e3d1-42f6-b48d-605d1c619f88">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DAEjemplo"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT pruebajava.resoluciones.num_resolucion,
+	pruebajava.resoluciones.monto_resolucion,
+	pruebajava.resoluciones.fecha_registro,
+	pruebajava.resoluciones.fam_beneficiarias,
+	pruebajava.resoluciones.num_resolucion,
+	pruebajava.resoluciones.emitida_por,
+	pruebajava.resoluciones.fecha_resolucion
+FROM pruebajava.resoluciones]]>
+	</queryString>
+	<field name="num_resolucion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="num_resolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="monto_resolucion" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="monto_resolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="fecha_registro" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="fecha_registro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="fam_beneficiarias" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="fam_beneficiarias"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="COLUMN_5" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="num_resolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="emitida_por" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="emitida_por"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<field name="fecha_resolucion" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="fecha_resolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resoluciones"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="20" uuid="221dcd89-873a-4560-95a6-df40e6f7488c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b943376d-1fa2-462d-9a14-43f70fb51234"/>
+				</reportElement>
+				<text><![CDATA[num_resolucion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="100" height="20" uuid="1ef18674-f200-4490-a5c7-366f9c3a1fb8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df5fa6b1-93b9-4c71-80a8-9724ecff5f6e"/>
+				</reportElement>
+				<text><![CDATA[monto_resolucion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="30" uuid="9bc9f717-627d-4dd0-81fb-de24732624f8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e63591b2-b185-4023-8f6c-10bbd1565fb5"/>
+				</reportElement>
+				<text><![CDATA[fecha_registro]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="58" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="10" width="100" height="30" uuid="5fa013ec-034b-4836-8710-fc2f1df2ac0a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b943376d-1fa2-462d-9a14-43f70fb51234"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{num_resolucion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="10" width="100" height="30" uuid="e1dc8f02-b83f-4fbf-b03c-73bcfd5e6f7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df5fa6b1-93b9-4c71-80a8-9724ecff5f6e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{monto_resolucion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="10" width="100" height="30" uuid="1f1df1b4-aae4-4c03-a180-7616c22f4e70">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e63591b2-b185-4023-8f6c-10bbd1565fb5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{fecha_registro}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

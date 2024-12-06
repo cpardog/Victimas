@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JDBCVictimas2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/JDBCVictimas.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
